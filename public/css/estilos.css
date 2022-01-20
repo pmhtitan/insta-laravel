@@ -1,0 +1,243 @@
+@font-face {
+    font-family: 'Acme';
+    src: url('/fonts/acme.woff') format('woff'),
+        url('/fonts/acme.woff2') format('woff2'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+        url('/fonts/acme.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+  }  
+
+.img-avatar{
+    width: 50px;
+    height: 50px;
+}
+.navbar .container-avatar,
+.publicate_img .container-avatar{
+    height: 38px;
+    width: 38px;
+    border-radius: 900px;
+    overflow: hidden;
+}
+
+.navbar .container-avatar img,
+.publicate_img .container-avatar img{
+    height: 100%;    
+}
+.publicate_img .container-avatar{
+    margin-left: 20px;
+}
+
+.publicate_img{
+    margin-bottom: 8%;
+}
+
+/* People Search - Index */
+
+.people-search-container{
+    border-radius: 10px;
+    -webkit-box-shadow: 5px 5px 19px -11px rgba(0,0,0,0.46);
+    -moz-box-shadow: 5px 5px 19px -11px rgba(0,0,0,0.46);
+    box-shadow: 5px 5px 19px -11px rgba(0,0,0,0.46);
+}
+.people-search-top{
+    border-radius: 6px;
+    -webkit-box-shadow: 0px 0px 19px -11px rgba(204,4,204,1);
+    -moz-box-shadow: 0px 0px 19px -11px rgba(204,4,204,1);
+    box-shadow: 0px 0px 19px -11px rgba(204,4,204,1);
+    margin-bottom: 5px;
+    font-family: 'Acme', 'Open Sans', 'Roboto', 'Lato';
+    font-size: 35px;
+}
+.profile-user{
+    display: block;
+}
+.profile-user .container-people{
+    display: block;
+}
+.profile-user .container-people img{
+    height: 30px;
+    width: 30px;
+    border-radius: 900px;
+    
+}
+.search-message{
+    font-family: 'Acme', 'Open Sans', 'Roboto', 'Lato';
+    font-size: 25px;
+}
+
+.publicate_img .container-avatar{
+    float: left;
+    margin-right: 20px;
+}
+.publicate_img .data-user{
+    line-height: 35px;
+}
+.publicate_img .data-user a {
+    color: #212529!important;
+}
+
+.publicate_img .data-user a:hover {
+    text-decoration: none!important;
+}
+
+.publicate_img .data-user .name-surname-home{
+    font-weight: bold;
+ /*    margin-left: 20px; */
+}
+
+.publicate_img .data-user .nick-home{
+    float: right;
+}
+
+/* Fecha */
+.publicate_img .card-body .date{
+    color:grey;
+    padding:0.6rem 1.25rem 0.5rem 1.25rem;
+}
+/* Estilos imagen home each foto */
+
+.img-container{
+    max-height: 400px;
+    overflow: hidden;
+}
+
+.img-container img{
+    width: 100%;
+}
+/* Detail */
+.publicate_img .card-body .img-detail{
+    max-height: 500px;
+}
+.publicate_img .card-body .p-comment-box{
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.publicate_img .card-body .p-comment-box textarea{
+    border: 1px solid #ffffff;
+}
+.is-invalid{
+    border-color: #e3342f!important;
+}
+.textarea-cmmt{
+    float: left;
+    width: 80%;
+}
+.btn-cmmt{
+    float: right;
+}
+.h3-text-comments{
+    padding-left: 2%;
+    padding-top: 2%;
+}
+.caja-comentarios{
+    padding-left: 2%;
+}
+.caja-comentarios .comment-nick{
+    font-weight: bold;
+}
+
+.hace-comment{
+    padding-left: 4%;
+    color: grey;
+    font-size: 12px;
+}
+.btn-delete-comment{
+    float: right;
+    margin-right: 10%;
+}
+
+
+
+@media only screen and (min-width: 1000px){
+    .btn-cmmt{
+        margin-top: 2%;
+        margin-right: 6%;
+        width:10%!important;
+    }
+}
+
+.publicate_img .card-body{
+    padding: 0; /* PARA que no tenga bordes, que la img ocupe toda la pantalla */
+    margin-bottom: 15px;
+}
+
+.publicate_img .card-body .description{
+    padding: 1.25rem;
+    padding-bottom: 0px;
+}
+.publicate_img .card-body .description span{
+    color: grey;
+}
+
+/* Estilos btn comments-home */
+.publicate_img .card-body .btn-comments{
+    margin-top: 0px;
+    margin-left: 10px;
+}
+
+/* Estilos like-home */
+.likes{
+    float: left;
+    padding-left: 20px;
+    padding-right: 7px;
+}
+.likes img{
+    width: 20px;
+}
+.contador-likes{
+    color:#5f5e5e;
+    font-size: 12px;
+}
+
+/* Estilos perfil */
+.profile-user .container-avatar{
+    width: 200px;
+    height: 200px;
+    border-radius: 900px;
+    overflow: hidden;
+    float: left;
+
+}
+.profile-user .container-avatar img{
+    width: 100%;
+    height: 100%;
+}
+.profile-user .user-info{
+    float: left;
+    padding-left: 30px;
+    padding-top: 20px;
+}
+.profile-user + .clearfix{
+    margin-bottom: 20px;
+}
+.profile-user{
+    margin-top: 20px;
+}
+
+
+/* Sticky Navbar */
+.navbar-sticky-top
+{
+    position: fixed;
+    z-index: 999;
+    opacity:1;
+    width: 100%;
+}
+.buscador{
+    display: inline-block;
+    margin-right: 10px;
+    width: 73%;
+}
+@media only screen and (max-width:600px){
+    .buscador{
+        width:60%;
+    }
+}
+.btnBuscador{
+    display: inline-block;
+}
+
+@media only screen and (min-width: 1024px) {
+    #navbarDropdown{
+        margin-left: 20px;
+    }
+}
